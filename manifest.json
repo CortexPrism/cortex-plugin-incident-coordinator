@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-incident-coordinator",
-  "version": "1.0.0",
-  "description": "Incident War Room Coordinator — Create incident channel, invite on-call team, live timeline, diagnostic suggestions",
+  "version": "1.0.1",
+  "description": "Incident War Room Coordinator \u2014 Create incident channel, invite on-call team, live timeline, diagnostic suggestions",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,14 +9,40 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-incident-coordinator",
   "homepage": "https://cortexprism.io/marketplace/plugins/incident-coordinator",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
-    { "name": "incident_create_room", "description": "Create war room chat channel", "params": [] },
-    { "name": "incident_invite_team", "description": "Invite on-call team members", "params": [] },
-    { "name": "incident_timeline", "description": "Maintain live incident timeline", "params": [] },
-    { "name": "incident_postmortem", "description": "Generate post-mortem draft", "params": [] }
+    {
+      "name": "incident_create_room",
+      "description": "Create war room chat channel",
+      "params": []
+    },
+    {
+      "name": "incident_invite_team",
+      "description": "Invite on-call team members",
+      "params": []
+    },
+    {
+      "name": "incident_timeline",
+      "description": "Maintain live incident timeline",
+      "params": []
+    },
+    {
+      "name": "incident_postmortem",
+      "description": "Generate post-mortem draft",
+      "params": []
+    }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
